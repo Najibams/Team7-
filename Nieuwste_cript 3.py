@@ -199,7 +199,7 @@ with tab1:
 
     # Kaartje toevoegen
     if not map_data.empty:
-        st.subheader("Vliegtuiggeluid Heatmap rond Schiphol")
+        st.subheader("Vliegtuiggeluid rond Schiphol")
 
 
 
