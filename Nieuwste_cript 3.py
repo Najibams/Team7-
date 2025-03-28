@@ -136,8 +136,8 @@ def haversine(lat1, lon1, lat2, lon2):
 def load_map_data():
     try:
         # Bestandslocaties
-        flight_data_path = r"C:\Users\nasro\Downloads\flights_today_master (1).csv"
-        station_data_path = r"C:\Users\nasro\Downloads\station_1_clean (1).csv"
+        flight_data_path = r"flights_today_master (1).csv"
+        station_data_path = r"station_1_clean (1).csv"
         
         df = pd.read_csv(flight_data_path)
         df2 = pd.read_csv(station_data_path)
@@ -208,7 +208,7 @@ st.title("🛬 Geluidsintensiteit Aalsmeerbaan Meetstation")
 st.markdown("*Laatste update: 2025-03-28 01:09:03 UTC door Team 7*")
 
 # === Data laden ===
-df = pd.read_csv(r"C:\Users\nasro\Downloads\echt.juist 1.csv")
+df = pd.read_csv(r"echt.juist 1.csv")
 df = df.dropna(subset=["Latitude", "Longitude", "SEL_dB", "FlightNumber"])
 
 
